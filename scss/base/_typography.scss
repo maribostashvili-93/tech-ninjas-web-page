@@ -1,0 +1,21 @@
+@use "./fonts" as *;
+@use "../abstracts/variables" as *;
+@use "./reset" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: $font-primary;
+  font-weight: $regular;
+  font-size: $font-size-xxxlarge;
+  line-height: 4rem;
+}
+
+p {
+  font-family: $font-primary;
+  font-weight: $regular;
+  font-size: $font-size-medium;
+  line-height: 2.8rem;
+}
