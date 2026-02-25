@@ -1,5 +1,5 @@
 @use "../base/fonts" as *;
-
+//fonts
 $font-primary: "Poppins", sans-serif;
 $font-secondary: "Plus Jakarta Sans", sans-serif;
 $font-tertiary: "Open Sans", sans-serif;
@@ -16,3 +16,36 @@ $font-size-large: 1.8rem;
 $font-size-xlarge: 2rem;
 $font-size-xxlarge: 2.4rem;
 $font-size-xxxlarge: 3.2rem;
+
+//colors
+//brand
+$color-primary: #052a44;
+$color-accent: #e8db84;
+//text
+$color-text-primary: #071210;
+$color-text-secondary: #1e2a39;
+
+//buttons
+$btn-primary-bg: $color-primary;
+$btn-primary-text: #ffffff;
+
+//icons color
+$icon-bg: $color-primary;
+$icon-color: $color-on-primary;
+
+//dark mode
+$color-dark-bg: #1e1e1e;
+$color-dark-surface: #2e2e2e;
+$btn-dark-bg: #ffffff;
+$btn-dark-text: $color-primary;
+
+//light mode
+$color-light-bg: #ffffff;
+$color-light-surface: #f4f4f4;
+$btn-light-bg: $color-primary;
+$btn-light-text: #ffffff;
+
+//
+$color-success: #5beb7b;
+$color-error: #ee6767;
+$color-warning: #f6c566;
