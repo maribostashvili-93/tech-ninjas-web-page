@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("/font/AvenirLTProBook.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("/font/AvenirLTProHeavy.otf") format("otf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+}
+
+.nav-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-burger {
+  width: 4.4rem;
+  height: 4.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 1.4rem;
+  position: relative;
+  z-index: 2;
+}
+.nav-burger img {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .nav-burger {
+    display: none;
+  }
+}
+.mode-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+  color: inherit;
+}
+
+body:has(#dark-mode-toggle:checked) {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+.app {
+  background: #ffffff;
+  color: #071210;
+  min-height: 100vh;
+}
+.app :where(.header,
+.container,
+.section,
+.card) {
+  background: #f4f4f4;
+  color: #071210;
+}
+.app :where(.mobile-menu, .mobile-menu-top, .mobile-nav) {
+  background: #ffffff;
+  color: #071210;
+}
+.app :where(a, .mobile-nav-link, .mobile-menu-title) {
+  color: #071210;
+}
+.app .btn {
+  background: #052a44;
+  color: #ffffff;
+}
+.app .mobile-menu .btn:hover {
+  background: #052a44;
+  filter: brightness(0.9);
+}
+.app .mobile-menu-close:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.app .logo-light {
+  display: none;
+}
+
+#dark-mode-toggle:checked ~ .app .logo-default {
+  display: none;
+}
+
+#dark-mode-toggle:checked ~ .app .logo-light {
+  display: block;
+}
+
+#dark-mode-toggle:checked ~ .app {
+  background: #1e1e1e;
+  color: #ffffff;
+  min-height: 100vh;
+}
+#dark-mode-toggle:checked ~ .app :where(.header,
+.container,
+.section,
+.card) {
+  background: #2e2e2e;
+  color: #ffffff;
+}
+#dark-mode-toggle:checked ~ .app :where(.mobile-menu, .mobile-menu-top, .mobile-nav) {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+#dark-mode-toggle:checked ~ .app :where(a, .mobile-nav-link, .mobile-menu-title) {
+  color: #ffffff;
+}
+#dark-mode-toggle:checked ~ .app .btn {
+  background: #ffffff;
+  color: #052a44;
+}
+#dark-mode-toggle:checked ~ .app .mobile-menu .btn:hover {
+  background: #ffffff;
+  filter: brightness(0.9);
+}
+#dark-mode-toggle:checked ~ .app .mobile-menu-close:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+#dark-mode-toggle:checked ~ .app .dark-mode-btn {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+#dark-mode-toggle:checked ~ .app .dark-mode-btn:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+#dark-mode-toggle:checked ~ .app .mobile-menu-close:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-mode-btn {
+  width: 4.4rem;
+  height: 4.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+.dark-mode-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.15);
+}
+.dark-mode-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.15);
+}
+.dark-mode-btn i {
+  font-size: 1.8rem;
+  position: absolute;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.dark-mode-btn .icon-moon {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+.dark-mode-btn .icon-sun {
+  opacity: 0;
+  transform: scale(0.6) rotate(-90deg);
+}
+
+#dark-mode-toggle:checked ~ .app .dark-mode-btn .icon-moon {
+  opacity: 0;
+  transform: scale(0.6) rotate(90deg);
+}
+#dark-mode-toggle:checked ~ .app .dark-mode-btn .icon-sun {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 9998;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  box-shadow: -0.5rem 0 1.5rem rgba(0, 0, 0, 0.3);
+  transform: translateX(100%);
+  transition: transform 0.35s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  gap: 1.8rem;
+}
+.mobile-menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-menu-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #071210;
+}
+.mobile-menu .mobile-menu-close {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 7rem;
+  height: 7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 1.2rem;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+.mobile-menu .mobile-menu-close:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  transform: rotate(90deg);
+}
+.mobile-menu .mobile-menu-close:active {
+  transform: rotate(90deg) scale(0.95);
+}
+.mobile-menu .mobile-menu-close img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+.mobile-menu .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 4rem;
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+  background-color: #052a44;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem auto 0;
+  transform: translateY(0);
+  background-color: #052a44;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+.mobile-menu .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
+  background-color: #2c2a2a;
+}
+.mobile-menu .btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.6rem 1.6rem rgba(0, 0, 0, 0.25);
+}
+.mobile-menu .mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 5rem;
+}
+.mobile-menu .mobile-nav-link {
+  text-decoration: none;
+  color: #071210;
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#burger-menu:checked ~ .menu-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#burger-menu:checked ~ .mobile-menu {
+  transform: translateX(0);
+}
+
+@media (min-width: 769px) {
+  .menu-overlay,
+  .mobile-menu {
+    display: none;
+  }
+}
+.container {
+  width: min 85vw, 120rem;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 2.4rem;
+}
+
+.header-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(43, 24, 89);
+}
+
+/*# sourceMappingURL=main.css.map */

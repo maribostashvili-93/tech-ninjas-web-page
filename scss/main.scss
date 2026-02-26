@@ -7,10 +7,12 @@
 @use "./layout/sections";
 @use "./layout/footer";
 @use "./darklightmode/switcher";
+@use "./burgermenu/burgermenu";
+@use "./layout/container";
 
 .header-layout {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: rgb(43, 24, 89);
 }

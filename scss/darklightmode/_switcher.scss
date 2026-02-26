@@ -1,0 +1,169 @@
+@use "../abstracts/variables" as *;
+
+$dark-text: #ffffff;
+
+.mode-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+  color: inherit;
+}
+
+body:has(#dark-mode-toggle:checked) {
+  background: $color-dark-bg;
+  color: $dark-text;
+}
+
+@mixin app-theme(
+  $bg,
+  $surface,
+  $text,
+  $btn-bg,
+  $btn-text,
+  $close-hover-bg
+) {
+  background: $bg;
+  color: $text;
+  min-height: 100vh;
+
+  :where(
+    .header,
+    .container,
+    .section,
+    .card
+  ) {
+    background: $surface;
+    color: $text;
+  }
+
+  :where(.mobile-menu, .mobile-menu-top, .mobile-nav) {
+    background: $bg;
+    color: $text;
+  }
+
+  :where(a, .mobile-nav-link, .mobile-menu-title) {
+    color: $text;
+  }
+
+  .btn {
+    background: $btn-bg;
+    color: $btn-text;
+  }
+
+  .mobile-menu .btn:hover {
+    background: $btn-bg;
+    filter: brightness(0.9);
+  }
+
+  .mobile-menu-close:hover {
+    background-color: $close-hover-bg;
+  }
+}
+
+.app {
+  @include app-theme(
+    $color-light-bg,
+    $color-light-surface,
+    $color-text-primary,
+    $btn-light-bg,
+    $btn-light-text,
+    rgba(0, 0, 0, 0.06)
+  );
+}
+
+.app .logo-light {
+  display: none;
+}
+
+#dark-mode-toggle:checked ~ .app .logo-default {
+  display: none;
+}
+
+#dark-mode-toggle:checked ~ .app .logo-light {
+  display: block;
+}
+
+#dark-mode-toggle:checked ~ .app {
+  @include app-theme(
+    $color-dark-bg,
+    $color-dark-surface,
+    $dark-text,
+    $btn-dark-bg,
+    $btn-dark-text,
+    rgba(255, 255, 255, 0.12)
+  );
+}
+
+#dark-mode-toggle:checked ~ .app .dark-mode-btn {
+  background-color: rgba(255, 255, 255, 0.12);
+
+}
+
+#dark-mode-toggle:checked ~ .app .dark-mode-btn:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+#dark-mode-toggle:checked ~ .app .mobile-menu-close:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-mode-btn {
+  width: 4.4rem;
+  height: 4.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+    box-shadow: 0 0.6rem 1.4rem rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.15);
+  }
+
+  i {
+    font-size: 1.8rem;
+    position: absolute;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .icon-moon {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+
+  .icon-sun {
+    opacity: 0;
+    transform: scale(0.6) rotate(-90deg);
+  }
+}
+
+#dark-mode-toggle:checked ~ .app .dark-mode-btn {
+  .icon-moon {
+    opacity: 0;
+    transform: scale(0.6) rotate(90deg);
+  }
+
+  .icon-sun {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
