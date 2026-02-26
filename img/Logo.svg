@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 78 24">
+  <!-- Generator: Adobe Illustrator 29.8.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st1 {
+        fill: #1576d8;
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+
+      .st3 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st4 {
+        fill: url(#linear-gradient3);
+      }
+
+      .st5 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="28.82" y1="75.9" x2="29.93" y2="-7.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#244970"/>
+      <stop offset=".47" stop-color="#23476d"/>
+      <stop offset=".71" stop-color="#1f4166"/>
+      <stop offset=".9" stop-color="#1a3858"/>
+      <stop offset="1" stop-color="#16304e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="42.97" y1="76.09" x2="44.08" y2="-6.87" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#244970"/>
+      <stop offset=".55" stop-color="#23476e"/>
+      <stop offset=".75" stop-color="#204267"/>
+      <stop offset=".9" stop-color="#1b395b"/>
+      <stop offset="1" stop-color="#16304e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient2" x1="56.8" y1="76.28" x2="57.92" y2="-6.68" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#244970"/>
+      <stop offset=".48" stop-color="#23476d"/>
+      <stop offset=".71" stop-color="#1f4166"/>
+      <stop offset=".9" stop-color="#1a3858"/>
+      <stop offset="1" stop-color="#16304e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient3" x1="14.75" y1="75.71" x2="15.87" y2="-7.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#244970"/>
+      <stop offset=".44" stop-color="#22476d"/>
+      <stop offset=".7" stop-color="#1f4165"/>
+      <stop offset=".9" stop-color="#193657"/>
+      <stop offset="1" stop-color="#16304e"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path class="st2" d="M-55.31.67v7.09c2.43-1.96,7.31-2.32,8.69,1.02.08.2.35.97.35,1.12v8.67l-.18.18h-4.21v-7.51c0-.13-.41-.91-.55-1.04-.96-.9-3.27-.25-4.09.67v7.88h-4.09l-.18-.18V.67h4.28Z"/>
+    <path class="st2" d="M-41.81,6.53l4.09,8.67,2.26-8.67h4.21l-3.78,12.28c-.88,2.49-2.83,4.45-5.56,4.7-.84.08-2.96.08-3.46-.69-.35-.53-.87-2.32-.44-2.85h2.44c.26,0,1.82-.54,1.5-1.01-1.72-3.91-3.89-7.79-5.49-11.74-.1-.25-.32-.53-.04-.69h4.28Z"/>
+    <path class="st2" d="M-22.57,18.75s.13-.95-.3-.85c-2.8,2.35-9.56,1.53-8.72-3.22.34-1.95,2.82-3.38,4.68-3.38h4.09c.26-2.84-3.93-1.88-5.59-1.38-.44.13-1.04.59-1.43.41-.12-.14-.64-2.16-.65-2.42,0-.13-.03-.24.09-.34,3.23-1.6,10.72-2.52,11.81,2.14.04.16.18.94.18,1.05v7.82l-.18.18h-3.97ZM-22.69,13.62c-1.15-.05-4.6.1-4.53,1.77s3.82.91,4.46-.18l.06-1.59Z"/>
+    <path class="st2" d="M-69.11,13.74c.69,3.65,5.42,2.51,7.87,1.46.25.04.25,2.21.19,2.51-.1.52-1.48.94-1.98,1.07-4.04,1.12-9.38.26-10.32-4.52-1.1-5.59,3.39-8.94,8.64-7.79,2.06.45,4.15,2.42,4.15,4.65v2.44l-.18.18h-8.37ZM-64.22,11.42c.1-3.09-4.86-2.88-4.89,0h4.89Z"/>
+    <circle class="st2" cx="-14.21" cy="10.63" r="2.38"/>
+  </g>
+  <g>
+    <path class="st5" d="M27.33.56v7.09c2.43-1.96,7.31-2.32,8.69,1.02.08.2.35.97.35,1.12v8.67l-.18.18h-4.21v-7.51c0-.13-.41-.91-.55-1.04-.96-.9-3.27-.25-4.09.67v7.88h-4.09l-.18-.18V.56h4.28Z"/>
+    <path class="st3" d="M40.83,6.43l4.09,8.67,2.26-8.67h4.21l-3.78,12.28c-.88,2.49-2.83,4.45-5.56,4.7-.84.08-2.96.08-3.46-.69-.35-.53-.87-2.32-.44-2.85h2.44c.26,0,1.82-.54,1.5-1.01-1.72-3.91-3.89-7.79-5.49-11.74-.1-.25-.32-.53-.04-.69h4.28Z"/>
+    <path class="st0" d="M60.07,18.64s.13-.95-.3-.85c-2.8,2.35-9.56,1.53-8.72-3.22.34-1.95,2.82-3.38,4.68-3.38h4.09c.26-2.84-3.93-1.88-5.59-1.38-.44.13-1.04.59-1.43.41-.12-.14-.64-2.16-.65-2.42,0-.13-.03-.24.09-.34,3.23-1.6,10.72-2.52,11.81,2.14.04.16.18.94.18,1.05v7.82l-.18.18h-3.97ZM59.95,13.51c-1.15-.05-4.6.1-4.53,1.77s3.82.91,4.46-.18l.06-1.59Z"/>
+    <path class="st4" d="M13.52,13.63c.69,3.65,5.42,2.51,7.87,1.46.25.04.25,2.21.19,2.51-.1.52-1.48.94-1.98,1.07-4.04,1.12-9.38.26-10.32-4.52-1.1-5.59,3.39-8.94,8.64-7.79,2.06.45,4.15,2.42,4.15,4.65v2.44l-.18.18h-8.37ZM18.41,11.31c.1-3.09-4.86-2.88-4.89,0h4.89Z"/>
+    <circle class="st1" cx="68.42" cy="10.52" r="2.38"/>
+  </g>
+</svg>

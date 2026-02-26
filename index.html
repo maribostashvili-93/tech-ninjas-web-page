@@ -4,7 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CareerPath-Mentoring-task</title>
-    <link rel="stylesheet" href="./css/style.css" />
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <input type="checkbox" id="dark-mode-toggle" class="mode-checkbox" />
+     <div class="app">
+    <header class="header">
+      <div class="container">
+        <div class="header-mobile">
+          <a href="#" class="logo-link">
+            <img src="./img/Logo.svg" alt="ehya" class="logo logo-default" />
+            <img src="./img/Logo-light.svg" alt="ehya" class="logo logo-light" />
+          </a>
+          <input type="checkbox" id="burger-menu" class="nav-toggle" />
+          <div class="header-actions">
+           
+           
+            <label
+              for="dark-mode-toggle"
+              class="dark-mode-btn"
+              aria-label="Toggle dark mode"
+            >
+              <i class="fa-solid fa-moon icon-moon"></i>
+              <i class="fa-solid fa-sun icon-sun"></i>
+            </label>
+           
+            <label for="burger-menu" class="nav-burger" aria-label="Open menu">
+              <img src="./img/ic_Menu.svg" alt="" />
+            </label>
+          </div>
+          <div class="mobile-menu">
+            <div class="mobile-menu__top">
+              <img src="./img/Logo.svg" alt="ehya" class="logo logo-default" />
+              <img src="./img/Logo-light.svg" alt="ehya" class="logo logo-light" />
+             <label for="burger-menu" class="mobile-menu-close">
+             <img src="./img/CloseButton.png" alt="close">
+            </label>
+            </div>
+            <nav class="mobile-nav">
+              <a href="#" class="mobile-nav-link">Home</a>
+              <a href="#" class="mobile-nav-link">About US</a>
+              <a href="#" class="mobile-nav-link">Services</a>
+              <a href="#" class="mobile-nav-link">Contact</a>
+              <a href="#" class="mobile-nav-link">Sign In</a>
+            </nav>
+            <a href="#" class="mobile-menu-cta btn">Free Trial</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    </div>
+  </body>
 </html>

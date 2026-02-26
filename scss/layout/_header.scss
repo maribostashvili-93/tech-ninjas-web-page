@@ -1,0 +1,50 @@
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo {
+  width: 7rem;
+  height: 7rem;
+  object-fit: contain;
+}
+
+.nav-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-burger {
+  width: 4.4rem;
+  height: 4.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 1.4rem;
+  position: relative;
+  z-index: 2;
+
+  img {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-burger {
+    display: none;
+  }
+}
