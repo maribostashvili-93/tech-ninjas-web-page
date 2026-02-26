@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+@mixin btn($padding: 15px 20px, $font-size: 1.6rem) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: $padding;
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+   background-color: $btn-primary-bg;
+    color: $btn-primary-text;
+
+  font-family: $font-primary;
+  font-weight: $font-size;
+  font-size: $font-size;
+  line-height: 1;
+
+   align-items: center;
+    justify-content: center;
+    margin: 4rem auto 0; 
+}
