@@ -82,10 +82,10 @@
             @include font-props (600, 42px, null);
 
         }
-
         >p{
             font-size: 18px;
             color: $color-text-primary;
+            font-weight: 400;
         }
 
         .card-wrapper{
