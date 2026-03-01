@@ -1,4 +1,5 @@
-@use "../base/fonts" as *;
+// @use "../base/fonts";
+
 //fonts
 $font-primary: "Poppins", sans-serif;
 $font-secondary: "Plus Jakarta Sans", sans-serif;
@@ -24,6 +25,7 @@ $color-accent: #e8db84;
 //text
 $color-text-primary: #071210;
 $color-text-secondary: #1e2a39;
+$color-text-paragraph: #5A7184;
 
 //buttons
 $btn-primary-bg: $color-primary;
@@ -31,7 +33,7 @@ $btn-primary-text: #ffffff;
 
 //icons color
 $icon-bg: $color-primary;
-$icon-color: $color-on-primary;
+$icon-color: $color-primary;
 
 //dark mode
 $color-dark-bg: #1e1e1e;

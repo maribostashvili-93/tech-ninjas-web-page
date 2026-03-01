@@ -1,0 +1,143 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+#rewievs {
+    @include display-center (column);
+    padding: 32px 24px ;
+    gap: 16px;
+
+    h2{
+        text-align: center;
+        @include font-props (null, 28px, 40px);
+    }
+
+    >p{
+        text-align: center;
+        @include font-props (null, 16px, 28px);
+        color: $color-text-paragraph; 
+        margin-bottom: 8px;
+    }
+
+    .card-wrapper{
+        @include display-center (column);
+        width: 100%;
+        
+        .card{
+            background-color: $color-light-bg;
+            overflow:hidden;
+            width: 262px;
+            height: 183px;
+            border-radius: 10px;
+            padding: 20.96px;
+            gap: 15.72px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            figure{
+                @include display-center (null);
+                gap: 17px;
+                
+                img{
+                    width: 45px;
+                }
+                
+                figcaption{
+                    >h3{
+                        @include font-props (700, 12px, null);
+                        }   
+
+                    >span{
+                        @include font-props (400, 9px, null);
+                        margin-bottom: 21.65px;
+                        }
+                }
+            }
+
+            p{
+                @include font-props ($regular, 12px, 20px);
+                text-align: center;
+                color: $color-text-secondary;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .see-more{
+        border-radius: 8px;
+        padding: 8px 12px;
+        background-color: $color-primary;
+        @include font-props (500, 14px, null);
+        color: $btn-primary-text;
+    }
+
+    .rewievs-arrows{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    #rewievs {
+
+        h2{
+            @include font-props (600, 42px, null);
+
+        }
+
+        >p{
+            font-size: 18px;
+            color: $color-text-primary;
+        }
+
+        .card-wrapper{
+            flex-direction: row;
+            gap: 20px;
+
+            .card{
+                padding: 32px;
+
+                figure{
+                    figcaption{
+                        h3{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                
+            }
+        } 
+
+        .see-more {
+            display: none;
+        }
+
+        .rewievs-arrows{
+            display: block;
+
+            >button{
+                border-radius: 6px;
+                padding: 12px;
+                margin: auto;
+                border: none;
+            }
+
+            >:nth-child(1){
+                background-color: $btn-dark-bg;  
+                margin-right: 12px; 
+
+                &:hover{
+                    background-color: #e2e4e4;
+                } 
+            }
+
+            >:nth-child(2){
+                background-color: $btn-primary-bg;
+                
+                &:hover{
+                    background-color: #11486f;
+                }
+            }
+        }
+    }
+}
+
+
