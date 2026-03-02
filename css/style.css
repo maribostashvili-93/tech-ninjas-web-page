@@ -1,36 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@font-face {
-  font-family: "Avenir LT Std";
-  src: url("/font/AvenirLTProBook.otf") format("otf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Avenir LT Std";
-  src: url("/font/AvenirLTProHeavy.otf") format("otf");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-html {
-  font-size: 62.5%;
-}
-
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 3.2rem;
-  line-height: 4rem;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.8rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +35,280 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("/font/AvenirLTProBook.otf") format("otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("/font/AvenirLTProHeavy.otf") format("otf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+#rewievs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px 24px;
+  gap: 16px;
+}
+#rewievs h2 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+}
+#rewievs > p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5A7184;
+  margin-bottom: 8px;
+}
+#rewievs .card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+#rewievs .card-wrapper .card {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 262px;
+  height: 183px;
+  border-radius: 10px;
+  padding: 20.96px;
+  gap: 15.72px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#rewievs .card-wrapper .card figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+#rewievs .card-wrapper .card figure img {
+  width: 45px;
+}
+#rewievs .card-wrapper .card figure figcaption > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+#rewievs .card-wrapper .card figure figcaption > span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  margin-bottom: 21.65px;
+}
+#rewievs .card-wrapper .card p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #1e2a39;
+  margin-top: 10px;
+}
+#rewievs .see-more {
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: #052a44;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+}
+#rewievs .rewievs-arrows {
+  display: none;
+}
+
+@media screen and (min-width: 620px) {
+  #rewievs {
+    padding: 100px;
+  }
+  #rewievs h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+  }
+  #rewievs > p {
+    font-size: 18px;
+    color: #071210;
+    font-weight: 400;
+  }
+  #rewievs .card-wrapper {
+    flex-direction: row;
+    gap: 20px;
+  }
+  #rewievs .card-wrapper .card {
+    padding: 32px;
+  }
+  #rewievs .card-wrapper .card figure figcaption h3 {
+    font-size: 18px;
+  }
+  #rewievs .see-more {
+    display: none;
+  }
+  #rewievs .rewievs-arrows {
+    display: block;
+  }
+  #rewievs .rewievs-arrows > button {
+    border-radius: 6px;
+    padding: 12px;
+    margin: auto;
+    border: none;
+  }
+  #rewievs .rewievs-arrows > :nth-child(1) {
+    background-color: #ffffff;
+    margin-right: 12px;
+  }
+  #rewievs .rewievs-arrows > :nth-child(1):hover {
+    background-color: #e2e4e4;
+  }
+  #rewievs .rewievs-arrows > :nth-child(2) {
+    background-color: #052a44;
+  }
+  #rewievs .rewievs-arrows > :nth-child(2):hover {
+    background-color: #11486f;
+  }
+}
+footer {
+  width: 100%;
+  max-width: 1200px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer div > h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+footer div > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 620px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
+  }
+}
+#contact {
+  padding: 32px 24px;
+  text-align: center;
+  max-width: 1240px;
+}
+#contact form {
+  background-color: #e8db84;
+  width: 100%;
+  border-radius: 10px;
+  padding: 24px 13px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#contact form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#contact form div fieldset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  border: none;
+}
+#contact form div input {
+  padding: 20px 24px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+}
+#contact form .description {
+  width: 100%;
+  gap: 18px;
+  height: 207px;
+  border-radius: 8px;
+  padding: 20px 24px 170px;
+  border: none;
+}
+#contact form button {
+  background-color: #052a44;
+  color: #ffffff;
+  width: 176px;
+  height: 54px;
+  border-radius: 8px;
+  padding: 15px 48px;
+  border: none;
+}
+
+@media screen and (min-width: 620px) {
+  #contact {
+    padding: 100px;
+  }
+  #contact form div {
+    flex-direction: row;
+    width: 100%;
+  }
+  #contact form h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #contact form > h3 {
+    font-size: 16px;
+    color: #071210;
+    font-weight: 400;
+  }
+  #contact form .input {
+    padding: 32px;
+  }
+}
 .header-layout {
   display: flex;
   justify-content: center;

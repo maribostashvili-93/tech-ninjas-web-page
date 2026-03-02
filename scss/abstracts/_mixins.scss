@@ -1,0 +1,15 @@
+@use './variables' as *;
+
+@mixin display-center ($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin font-props($weight, $size, $height){
+    font-family: $font-primary;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}

@@ -1,13 +1,14 @@
-@use "./abstracts/mixins" as *;
-@use "./abstracts/variables" as *;
+// @use "./abstracts/mixins" as *;
+// @use "./abstracts/variables" as *;
 @use "./base/reset";
 @use "./base/typography";
 @use "./components/buttons";
 @use "./layout/header";
 @use "./layout/sections";
+@use "./layout/rewievs";
 @use "./layout/footer";
 @use "./darklightmode/switcher";
-
+@use "./layout/form.scss";
 .header-layout {
   display: flex;
   justify-content: center;

@@ -1,6 +1,6 @@
 @use "../abstracts/variables" as *;
-@use "./fonts" as *;
-@use "./typography" as *;
+// @use "./fonts" as *;
+// @use "./typography" as *;
 
 * {
   margin: 0;
@@ -25,7 +25,7 @@ p {
 a {
   text-decoration: none;
 }
-
+ 
 li {
   list-style: none;
 }
