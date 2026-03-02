@@ -150,6 +150,9 @@ p {
 }
 
 @media screen and (min-width: 620px) {
+  #rewievs {
+    padding: 100px;
+  }
   #rewievs h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -194,6 +197,37 @@ p {
   }
   #rewievs .rewievs-arrows > :nth-child(2):hover {
     background-color: #11486f;
+  }
+}
+footer {
+  width: 100%;
+  max-width: 1200px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer div > h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+footer div > h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 620px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px;
   }
 }
 #contact {
@@ -252,14 +286,11 @@ p {
   padding: 15px 48px;
   border: none;
 }
-#contact footer > h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 28px;
-}
 
 @media screen and (min-width: 620px) {
+  #contact {
+    padding: 100px;
+  }
   #contact form div {
     flex-direction: row;
     width: 100%;

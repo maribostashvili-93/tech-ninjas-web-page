@@ -52,45 +52,33 @@
             padding: 15px 48px;
             border: none;
         }
-
     }
-    
-    footer{
-        >h2{
-        @include font-props (500, 16px, 28px)
-        }
-
-        
-
-    }
-    
 }
 
 @media  screen and (min-width:620px) {
     #contact {
-
-    form{
-        
-        div{
-            flex-direction: row;
-            width: 100%;
+        padding: 100px;
+        form{
             
-        }
-    
-      h2{
-        @include font-props(500, 20px, null);
+            div{
+                flex-direction: row;
+                width: 100%;   
+            }
         
-      }
-      >h3{
-        font-size: 16px;
-        color: $color-text-primary;
-        font-weight: 400;
-      }
-    
-      .input{
-        padding: 32px;
-      }
-    }
+            h2{
+                @include font-props(500, 20px, null);
+                
+            }
+            >h3{
+                font-size: 16px;
+                color: $color-text-primary;
+                font-weight: 400;
+            }
+            
+            .input{
+                padding: 32px;
+            }
+        }
  } 
     
 }

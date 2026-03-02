@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+footer{
+    width: 100%;
+    max-width: 1200px;
+    div{
+        @include display-center (column);
+        
+        >h2{
+            @include font-props ( 500, 20px, null);
+            
+        }
+        >h3{
+            @include font-props (400, 16px, null);
+            
+        }
+
+    }
+}
+
+@media screen and (min-width:620px){
+    footer{
+        @include display-center (row);
+        justify-content: space-between;
+        padding: 100px;
+    }
+    
+}
