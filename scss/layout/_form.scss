@@ -1,0 +1,96 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+#contact{
+    padding: 32px 24px;
+    text-align: center;
+    max-width: 1240px;
+
+    form{
+    background-color: $color-accent;
+    width: 100%;
+    border-radius: 10px;
+    padding: 24px 13px;
+    align-items: center;
+    @include display-center (column);
+    gap: 20px;
+
+    div{
+        @include display-center (column);
+        gap: 20px;
+
+        fieldset{ 
+            @include display-center (column);
+            gap: 18px;
+            width: 100%;
+            border: none;
+        }        
+
+            input{
+                padding: 20px 24px;
+                width: 100%;
+                border-radius: 8px;
+                border: none;
+                
+            }
+        }
+
+        .description{
+            width: 100%;
+            gap: 18px;
+           height: 207px;
+            border-radius: 8px;
+            padding: 20px 24px 170px;
+            border: none;
+        }
+        button{
+            background-color: $color-primary;
+            color: $btn-primary-text;
+            width: 176px;
+            height: 54px;
+            border-radius: 8px;
+            padding: 15px 48px;
+            border: none;
+        }
+
+    }
+    
+    footer{
+        >h2{
+        @include font-props (500, 16px, 28px)
+        }
+
+        
+
+    }
+    
+}
+
+@media  screen and (min-width:620px) {
+    #contact {
+
+    form{
+        
+        div{
+            flex-direction: row;
+            width: 100%;
+            
+        }
+    
+      h2{
+        @include font-props(500, 20px, null);
+        
+      }
+      >h3{
+        font-size: 16px;
+        color: $color-text-primary;
+        font-weight: 400;
+      }
+    
+      .input{
+        padding: 32px;
+      }
+    }
+ } 
+    
+}

@@ -8,7 +8,7 @@
 @use "./layout/rewievs";
 @use "./layout/footer";
 @use "./darklightmode/switcher";
-
+@use "./layout/form.scss";
 .header-layout {
   display: flex;
   justify-content: center;
